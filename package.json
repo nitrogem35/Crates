@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@napi-rs/cli": "^2.18.4"
+  },
+  "napi": {
+    "name": "/lib/crates-engine"
+  },
+  "scripts": {
+    "build": "napi build --release",
+    "build:debug": "napi build"
+  },
+  "type": "module"
+}
