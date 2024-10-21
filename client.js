@@ -11,9 +11,6 @@ const { util, connectToServer } = cratesEngine;
 const APIBase = "index.gats.io/api";
 util.setAPIBase(APIBase);
 
-//TODO: Remove this when gats has proper ssl set up.
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-
 //When launched, we should just connect to the best server
 await util.grabServers();
 await util.testAllPing();
