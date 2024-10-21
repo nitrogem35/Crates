@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "@napi-rs/cli": "^2.18.4"
+    "@napi-rs/cli": "^2.18.4",
+    "user-agents": "^1.1.333",
+    "ws": "^8.18.0"
   },
   "napi": {
     "name": "/lib/crates-engine"
