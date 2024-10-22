@@ -1,11 +1,11 @@
 import * as fs from 'fs';
 import chalk from 'chalk';
 let cratesEngine;
-if (fs.existsSync('./lib/crates-engine.node')) {
-    cratesEngine = await import('./lib/crates-engine.node');
+if (fs.existsSync('./lib/crates-engine-rust/engine.node')) {
+    cratesEngine = await import('./lib/crates-engine-rust/engine.node');
 } else {
     //Fallback to JS engine
-    cratesEngine = await import('./lib/crates-engine.js');
+    cratesEngine = await import('./lib/crates-engine-js/engine.js');
 }
 const { connectToServer, Util } = cratesEngine;
 //General configuration
