@@ -13,7 +13,6 @@ const APIBase = "https://index.gats.io/api";
 Util.setAPIBase(APIBase);
 
 //Setup game variables
-const ingame = false;
 const loadout = [Util.guns.indexOf("sniper"), Util.armors.indexOf("no_armor"), Util.colors.indexOf("green")];
 let world = {};
 let controller = {};
